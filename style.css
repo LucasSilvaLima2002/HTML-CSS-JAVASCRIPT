@@ -1,0 +1,200 @@
+:root {
+
+--white: #FFFFFF;
+--grey: #C0C0C0;
+--button-blue : #167BF7;
+--blue-button-effect : #66a7f7;
+--background-colour : #00030C;
+--fonte_principal : 'Inter';
+
+}
+
+body{
+
+background-color: var(--background-colour);  /*var é uma função */
+color: var(--white);
+font-family: var(--fonte_principal);
+font-size: 16px;
+font-weight: 400;
+
+
+}
+
+*{ /*pesquisar * e o root */
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.principal {
+
+    background-image: url("img/Background.png"); /*se for decorativa usa o background image */
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+
+   
+   }
+
+   .container {
+
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    
+ 
+ 
+    }
+
+    .container__botao{
+
+        background-color:var(--button-blue);
+        border-radius: 5px; /*arredonda as boras */
+        padding: 1em; /*em é o tamanho da fonte */
+        display: block; /*ta ocupando a pagina inteira */
+        color: var(--white);
+        text-decoration: none;
+        margin-bottom: 1em;
+        
+      
+    }
+
+    .botao_secundario{
+
+        background-color: transparent;
+        border: 2px solid var(--white);
+        
+        
+
+    }
+
+    .container__aviso {
+
+        font-size: 12px;
+        color: var(--grey);
+    }
+    
+    .container__titulo {
+
+        font-size: 28px;
+        font-weight: 700px;;
+
+    }
+
+    .container__img {
+
+        margin: 1em 0 2em 0; /*funciona como um relogio, (parte de cima, direita, baixo, esquerda) */
+
+    }
+
+    .container__caixa{
+
+        margin: 0 6em;
+    }
+
+    .secundario__imagem{
+
+        width: 80%;
+
+    }
+
+    .secundario{
+        align-items: center;
+        margin: 0 6em;
+
+    }
+
+    .descrição__titulo{
+
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 0.4em;
+    }
+
+    .descrição__paragrafo{
+
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--grey);
+
+    }
+
+    .secundario_botão{
+
+        display: inline-block;
+        margin-top: 1em;
+
+    }
+
+    .container__descrição{
+        padding: 2em;
+    }
+
+    .dispositivos__listas{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 2em 0 10em;
+    }
+    
+    .dispositivos{
+        text-align: center;
+    }
+    
+    .dispositivos__titulo{
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    .lista__item{
+        font-weight: 700;
+        font-size: 32px;
+        
+
+    }
+
+    .rodape{
+        text-align: center;
+        margin: 5em 3em;
+        
+    }
+    .rodape__lista{
+
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 1em;
+    }
+
+    .lista__link a{
+        text-decoration: none;
+        color: var(--white);
+        margin-left: 1em;
+       
+    }
+
+    
+
+    .rodapé__texto{
+        
+        margin: 2em 0;
+        color: var(--cinza-secundario);
+        font-size: 14px;
+    }
+
+
+    .lista__link a:hover{
+        color: var(--button-blue);
+    }
+
+    .lista__link a:active{
+        color: var(--blue-button-effect);
+    }
+    
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
